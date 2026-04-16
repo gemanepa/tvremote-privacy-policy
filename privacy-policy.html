@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | TV Remote WiFi</title>
+    <meta
+      name="description"
+      content="Privacy Policy for TV Remote WiFi, a Wi-Fi TV remote app for Android and iOS."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --background: #f7f8fb;
+        --foreground: #1e2536;
+        --muted: #5f6676;
+        --panel: #ffffff;
+        --border: #d9deea;
+        --accent: #2f6fbd;
+        --warning-bg: #fff5d8;
+        --warning-fg: #5b4100;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #121620;
+          --foreground: #f2f5fb;
+          --muted: #b8c0cf;
+          --panel: #1c2230;
+          --border: #343c4f;
+          --accent: #8bb8ff;
+          --warning-bg: #332704;
+          --warning-fg: #ffe59a;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--foreground);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
+
+      article {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: clamp(24px, 5vw, 48px);
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 6vw, 3rem);
+      }
+
+      h2 {
+        margin: 32px 0 12px;
+        font-size: 1.35rem;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        margin: 0 0 16px;
+        padding-left: 24px;
+      }
+
+      li {
+        margin: 8px 0;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .meta {
+        color: var(--muted);
+        margin-bottom: 28px;
+      }
+
+      .notice {
+        background: var(--warning-bg);
+        border: 1px solid color-mix(in srgb, var(--warning-fg) 28%, transparent);
+        border-radius: 8px;
+        color: var(--warning-fg);
+        margin: 0 0 28px;
+        padding: 14px 16px;
+      }
+
+      .summary {
+        border-left: 4px solid var(--accent);
+        padding-left: 16px;
+      }
+
+      code {
+        background: color-mix(in srgb, var(--muted) 14%, transparent);
+        border-radius: 4px;
+        padding: 1px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: April 11, 2026</p>
+
+        <p>
+          This Privacy Policy explains how <strong>TV Remote WiFi</strong> handles information when
+          you use the app to discover and control TVs and streaming devices on your local Wi-Fi
+          network.
+        </p>
+
+        <p class="summary">
+          TV Remote WiFi does not require an account, does not collect your email address, phone
+          number, contacts, Wi-Fi network name, precise location, or advertising identifiers, and
+          does not sell personal information. The app uses your local network to find compatible TV
+          devices and uses Firebase Crashlytics for crash reporting and diagnostics.
+        </p>
+
+        <h2>Information The App Handles</h2>
+        <p>The app handles the following information to provide remote-control features:</p>
+        <ul>
+          <li>
+            <strong>Local network device information:</strong> device name, IP address, port,
+            platform type, discovery source, and related local discovery metadata for TVs and
+            streaming devices found through mDNS and SSDP.
+          </li>
+          <li>
+            <strong>Connection information stored on your device:</strong> the last connected TV
+            device, whether the app should try to power it on, remote-control preferences, haptic
+            preference, theme preference, and whether certain in-app tips have already been shown.
+          </li>
+          <li>
+            <strong>Platform pairing credentials stored on your device:</strong> credentials such as
+            LG or Samsung client keys or tokens when needed to reconnect to a TV that you approved.
+          </li>
+          <li>
+            <strong>Crash and diagnostic information:</strong> crash reports, unhandled JavaScript
+            exceptions, device and operating-system diagnostic context, and the limited custom
+            diagnostic fields described below.
+          </li>
+        </ul>
+
+        <h2>How Local Network Discovery Works</h2>
+        <p>
+          TV Remote WiFi uses your Wi-Fi/local network to discover compatible TVs and streaming
+          devices. This discovery happens on your local network so the app can show available
+          devices and send remote-control commands after you choose a device.
+        </p>
+        <p>
+          The app does not collect or send your Wi-Fi network name, Wi-Fi password, router
+          information, precise location, contacts, or account data. Local device information is used
+          to connect to and control devices on the same network.
+        </p>
+
+        <h2>Crashlytics Diagnostics</h2>
+        <p>
+          TV Remote WiFi uses Firebase Crashlytics, provided by Google, to understand crashes and
+          reliability problems. Crash reports may be uploaded to Firebase after a crash or on the
+          next app launch.
+        </p>
+        <p>The app adds only limited diagnostic context to Crashlytics:</p>
+        <ul>
+          <li>
+            Current route, such as <code>/connect</code>, <code>/settings</code>, or <code>/</code>.
+          </li>
+          <li>
+            Connection status, such as <code>idle</code>, <code>searching</code>,
+            <code>selecting</code>, <code>pairing</code>, or <code>connected</code>.
+          </li>
+          <li>
+            Connected platform type, such as <code>androidtv</code>, <code>roku</code>,
+            <code>samsung</code>, <code>lg</code>, or <code>none</code>.
+          </li>
+          <li>Discovery status and the number of discovered devices.</li>
+          <li>
+            Remote command diagnostic logs containing command name, platform type, and whether the
+            command succeeded or failed.
+          </li>
+        </ul>
+        <p>
+          The app intentionally does not send TV names, TV IP addresses, pairing codes, stored
+          platform credentials, raw discovery payloads, user identifiers, email addresses, phone
+          numbers, contacts, Wi-Fi network names, full device objects, or request/response payloads
+          to Crashlytics.
+        </p>
+
+        <h2>How Information Is Used</h2>
+        <p>The app uses information for these purposes:</p>
+        <ul>
+          <li>Discovering compatible TVs and streaming devices on your local network.</li>
+          <li>Connecting to the device you select.</li>
+          <li>
+            Sending remote-control commands, such as navigation, volume, media, and app commands.
+          </li>
+          <li>
+            Remembering app settings and the last connected TV when you enable those behaviors.
+          </li>
+          <li>Maintaining approved TV sessions so you do not need to pair again every time.</li>
+          <li>Diagnosing crashes and improving reliability.</li>
+        </ul>
+
+        <h2>Sharing And Third Parties</h2>
+        <p>
+          TV Remote WiFi does not sell personal information and does not use third-party advertising
+          SDKs. Crash and diagnostic information is processed by Firebase Crashlytics, a Google
+          service, to provide crash reporting. Google may process this information according to its
+          own terms and privacy policies.
+        </p>
+
+        <h2>Data Stored On Your Device</h2>
+        <p>
+          Connection details, approved platform credentials, and app preferences are stored locally
+          on your device. This local storage helps the app reconnect to TVs and remember your
+          preferences. You can clear this local data by changing available in-app settings where
+          provided or by uninstalling the app.
+        </p>
+
+        <h2>Permissions</h2>
+        <p>
+          The app may request local network permissions so it can discover and connect to TVs and
+          streaming devices on your Wi-Fi network. If you deny or disable local network access,
+          device discovery and remote-control features may not work.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          Local app data remains on your device until you clear it, disable related settings, or
+          uninstall the app. Crashlytics diagnostic data is retained by Firebase according to
+          Firebase Crashlytics retention settings and policies.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          TV Remote WiFi is not directed to children under 13. The app does not knowingly collect
+          personal information from children.
+        </p>
+
+        <h2>International Processing</h2>
+        <p>
+          Crash and diagnostic information processed by Firebase Crashlytics may be processed in
+          countries other than your own, depending on Google's infrastructure and service practices.
+        </p>
+
+        <h2>Changes To This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. When it changes, the effective date
+          at the top of this page will be updated.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this Privacy Policy or privacy practices for TV Remote WiFi,
+          contact: <a href="mailto:hello@gemanepa.dev">hello@gemanepa.dev</a>.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
